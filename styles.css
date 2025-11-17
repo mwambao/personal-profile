@@ -1,0 +1,39 @@
+
+* {
+    border: 1px solid yellow;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+
+}
+
+#welcome-section {
+  background-color: black;
+  color: white;
+}
+
+#projects {
+  background-color: blue;
+}
+
+#contact {
+  background-color: grey;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
