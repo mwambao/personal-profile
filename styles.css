@@ -5,20 +5,24 @@
 #navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0%;
   width: 100%;
-  background-color: red;
+  background-color: brown;
+  align-items: right;
 }
 
 ul {
   list-style-type: none;
+  
 }
 
 ul{
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px;
 
 }
+
+
 
 #welcome-section {
   background-color: black;
