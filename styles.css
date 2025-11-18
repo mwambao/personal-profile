@@ -51,6 +51,10 @@ h1 {
   margin-right: 10px;
 }
 
+div img {
+  margin-bottom: 10px;
+}
+
 #contact {
   background-color: grey;
   width: 100%;
