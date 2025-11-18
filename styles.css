@@ -46,6 +46,11 @@ h1 {
   /* width: 100%;*/
 }
 
+.portfolio-projects {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #contact {
   background-color: grey;
   width: 100%;
