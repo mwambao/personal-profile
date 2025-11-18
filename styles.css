@@ -1,14 +1,15 @@
 
- /* {
+* {
     border: 1px solid yellow;
 } 
-*/
+
 #navbar {
   position: fixed;
   top: 0;
   right: 0%;
   width: 100%;
   background-color: #a67c5c;
+
 }
 
 ul {
@@ -18,10 +19,15 @@ ul {
   justify-self: end;
 }
 
+h1 {
+  height: 20px;
+  ;
+}
 
 #welcome-section {
   background-color: #101010;
   color: white;
+  margin-top: 30px;
 }
 
 #projects {
