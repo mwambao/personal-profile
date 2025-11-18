@@ -1,36 +1,31 @@
 
-* {
+ /* {
     border: 1px solid yellow;
-}
+} 
+*/
 #navbar {
   position: fixed;
   top: 0;
   right: 0%;
   width: 100%;
-  background-color: brown;
-  align-items: right;
+  background-color: #a67c5c;
 }
 
 ul {
   list-style-type: none;
-  
-}
-
-ul{
   display: grid;
   grid-template-columns: 100px 100px 100px;
-
+  justify-self: end;
 }
-
 
 
 #welcome-section {
-  background-color: black;
+  background-color: #101010;
   color: white;
 }
 
 #projects {
-  background-color: blue;
+  background-color: #afad8f;
 }
 
 #contact {
