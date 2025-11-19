@@ -1,7 +1,7 @@
 
-  * {
+ /* * {
     border: 1px solid yellow;
-} 
+} */
 
 body {
   display: grid;
@@ -98,14 +98,35 @@ div img {
 }
 
 #contact {
-  background-color: grey;
+  height: 800px;
+  background-color: rgb(105, 102, 102);
   width: 100%;
+  text-align: center;
   
 }
 
+#contact-heading {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin-bottom: 80px;
+}
+
+#contact p {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f0ffff;
+  font-style: italic;
+
+}
 .reachout {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 200px 450px 200px 450px 200px;
+  justify-content: center;
+  justify-items: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f0ffff;
   
 }
 @media screen and (max-width: 600px) {
