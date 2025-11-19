@@ -1,7 +1,7 @@
 
-  * {
+ /* * {
     border: 1px solid yellow;
-} 
+} */
 
 body {
   display: grid;
@@ -65,14 +65,23 @@ h1 {
 #projects {
   background-color: #4682b4;
   width: 100%;
+  text-align: center;
+}
+
+#project-text {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-decoration: underline;
 }
 
 .portfolio-projects {
   
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /*margin-left: 10px;
-  margin-right: 10px;*/
+  grid-template-columns: 15% 15% 15%;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 10px 10px;
 }
 
 div img {
