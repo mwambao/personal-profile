@@ -73,6 +73,7 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: underline;
+
 }
 
 .portfolio-projects {
@@ -85,10 +86,11 @@ h1 {
 }
 
 .project-name {
+  width: 200px;
+  background-color:#423f3f;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-
 }
 
 div img {
