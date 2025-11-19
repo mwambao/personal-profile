@@ -1,7 +1,7 @@
 
-/* * {
+  * {
     border: 1px solid yellow;
-} */
+} 
 
 body {
   display: grid;
@@ -13,8 +13,8 @@ body {
   top: 0;
   right: 0%;
   width: 100%;
-  background-color: #a67c5c;
- 
+  height: 6%;
+  background-color: #dc143c;
 
 }
 
@@ -23,30 +23,52 @@ ul {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   justify-self: end;
+ 
+}
+
+ul li {
+  color: white;
+  font-size: 25px;
+  font-family: tahoma;
 }
 
 h1 {
   height: 20px;
-  ;
+  
 }
 
 #welcome-section {
-  background-color: #101010;
+  background-color: #423f3f;
   color: white;
   margin-top: 60px;
   width: 100%;
+  height: 1010px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#hey {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #career {
   color: red;
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #projects {
-  background-color: #afad8f;
-  /* width: 100%;*/
+  background-color: #4682b4;
+  width: 100%;
 }
 
 .portfolio-projects {
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /*margin-left: 10px;
