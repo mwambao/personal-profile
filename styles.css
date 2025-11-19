@@ -84,6 +84,13 @@ h1 {
   grid-gap: 10px 10px;
 }
 
+.project-name {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+
+}
+
 div img {
   margin-bottom: 10px;
 }
