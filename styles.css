@@ -95,6 +95,10 @@ h1 {
 
 div img {
   margin-bottom: 10px;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 #contact {
