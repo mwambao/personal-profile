@@ -23,13 +23,19 @@ ul {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   justify-self: end;
- 
+
+}
+
+ul li:hover {
+  background-color: #4682b4;
 }
 
 ul li {
   color: white;
   font-size: 25px;
   font-family: tahoma;
+  width: 100px;
+  text-align: center;
 }
 
 h1 {
