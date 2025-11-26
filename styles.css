@@ -3,9 +3,30 @@
     border: 1px solid yellow;
 } */
 
-body {
-  display: grid;
-  justify-items: center;
+/*body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'navigation-section'
+    'welcome-section'
+    'projects-section'
+    'contact-section';
+    gap: 20px;
+    /*background-color: dodgerblue;*/
+   }
+
+.navigation-section {
+  grid-area: navigation-section;
+  
 }
 
 #navbar {
@@ -21,7 +42,7 @@ body {
 ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: auto auto auto;
   justify-self: end;
 
 }
@@ -52,16 +73,12 @@ h1 {
   
 }
 
-#welcome-section {
+.welcome-section {
+  grid-area: welcome-section;
   background-color: #423f3f;
   color: white;
-  margin-top: 60px;
-  width: 100%;
-  height: 1010px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 100vw;
+  text-align: center;
 
 }
 
@@ -77,9 +94,10 @@ h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#projects {
+.projects-section {
+  grid-area: projects-section;
   background-color: #4682b4;
-  width: 100%;
+  /*width: 100%;*/
   text-align: center;
 }
 
@@ -94,18 +112,48 @@ h1 {
 .portfolio-projects {
   
   display: grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-areas: 
+  'tribute random-quote-machine js-calculator'
+  'map-data wikipidia-viewer tic-tack-toe';
+  grid-template-columns: auto auto auto;
   justify-content: center;
   justify-items: center;
-  grid-gap: 10px 10px;
+  gap: 10px;
+}
+
+.tribute {
+  grid-area: tribute;
+}
+
+.random-quote-machine {
+  grid-area: random-quote-machine;
+}
+
+.js-calculator {
+  grid-area: js-calculator;
+}
+
+.map-data {
+  grid-area: map-data;
+}
+
+.wikipidia-viewer {
+  grid-area: wikipidia-viewer;
+}
+
+.tic-tack-toe {
+  grid-area: tic-tack-toe;
 }
 
 .project-name {
-  width: 200px;
+  width: 100%;
   background-color:#423f3f;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  
+  
+
 }
 
 div img {
@@ -116,10 +164,11 @@ div img {
   border-bottom-right-radius: 5%;
 }
 
-#contact {
-  height: 800px;
+.contact-section {
+  grid-area: contact-section;
+  /*height: 800px;*/
   background-color: rgb(105, 102, 102);
-  width: 100%;
+  /*width: 100%;*/
   text-align: center;
   
 }
@@ -148,7 +197,7 @@ div img {
   color: #f0ffff;
   
 }
-@media screen and (max-width: 600px) {
+@media screen and (width < 600px) {
   body {
     background-color: red;
   }
