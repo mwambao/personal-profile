@@ -62,7 +62,7 @@ ul a:hover {
 
 ul li {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-family: tahoma;
   width: 100px;
   text-align: center;
@@ -79,17 +79,18 @@ h1 {
   color: white;
   width: 100vw;
   text-align: center;
+  margin-top: 30px;
 
 }
 
 #hey {
-  font-size: 60px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #career {
   color: red;
-  font-size: 40px;
+  font-size: 20px;
   font-style: italic;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -102,7 +103,7 @@ h1 {
 }
 
 #project-text {
-  font-size: 60px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: underline;
@@ -112,6 +113,9 @@ h1 {
 .portfolio-projects {
   
   display: grid;
+  min-height: 100vh;
+  min-width: 100vw;
+  grid-template-rows: auto auto;
   grid-template-areas: 
   'tribute random-quote-machine js-calculator'
   'map-data wikipidia-viewer tic-tack-toe';
@@ -148,7 +152,7 @@ h1 {
 .project-name {
   width: 100%;
   background-color:#423f3f;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   
@@ -174,14 +178,14 @@ div img {
 }
 
 #contact-heading {
-  font-size: 60px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   margin-bottom: 80px;
 }
 
 #contact p {
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f0ffff;
   font-style: italic;
@@ -192,7 +196,7 @@ div img {
   grid-template-columns: 200px 450px 200px 450px 200px;
   justify-content: center;
   justify-items: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f0ffff;
   
@@ -201,4 +205,27 @@ div img {
   body {
     background-color: red;
   }
+
+.portfolio-projects {
+  display: grid;
+  min-height: 100vh;
+  width: 100vw;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: 
+  'tribute'
+  'random-quote-machine'
+  'js-calculator' 
+  'map-data'
+  'wikipidia-viewer'
+  'tic-tack-toe';
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+img {
+  width: 90%;
+  height: 80%;
+}
+
 }
