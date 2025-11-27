@@ -1,7 +1,7 @@
 
- /* * {
+  * {
     border: 1px solid yellow;
-} */
+} 
 
 /*body, html {
   width: 100%;
@@ -113,9 +113,9 @@ h1 {
 .portfolio-projects {
   
   display: grid;
-  min-height: 100vh;
+  min-height: 700px;
   min-width: 100vw;
-  grid-template-rows: auto auto;
+  grid-template-rows: 350px 350px;
   grid-template-areas: 
   'tribute random-quote-machine js-calculator'
   'map-data wikipidia-viewer tic-tack-toe';
@@ -151,7 +151,7 @@ h1 {
 
 .project-name {
   width: 100%;
-  background-color:#423f3f;
+  /* background-color:#423f3f; */
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -201,11 +201,15 @@ div img {
   color: #f0ffff;
   
 }
+
+/* Mobile phone screens */
+
 @media screen and (width < 600px) {
   body {
     background-color: red;
   }
 
+ 
 .portfolio-projects {
   display: grid;
   min-height: 100vh;
@@ -228,4 +232,48 @@ img {
   height: 80%;
 }
 
+#project-text {
+  width: 100vw;
+}
+
+.contact-section {
+  width: 100vw;
+}
+
+.reachout {
+  display: grid;
+  width: 100vw;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  'fb'
+  'github'
+  'profile-link'
+  'twitter'
+  'email'
+  'call';
+  gap: 10px;
+}
+
+#fb {
+  grid-area: fb;
+}
+
+#github {
+  grid-area: github;
+}
+#profile-link {
+  grid-area: profile-link;
+}
+
+#twitter {
+  grid-area: twitter;
+}
+#email {
+  grid-area: email;
+}
+
+#call {
+  grid-area: call;
+}
 }
